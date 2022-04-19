@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prompt Dialog Box</title>
+</head>
+<body>
+    <button onclick="myFunction()">Click Me</button>
+
+    <script>
+        function myFunction(){
+            let name=window.prompt("What is your name?", "");
+            name=name?name:"anonymous";
+
+            let age=prompt("Hello "+name+" How old are you?");
+            alert(name+" is "+age+" years old");
+        }
+    </script>
+</body>
+</html>

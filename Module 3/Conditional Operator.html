@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conditional Operator</title>
+</head>
+<body>
+    <button onclick="myFunc()">Click Me</button>
+    <button onclick="myFunc2()">Click Me 2</button>
+    <script>
+        function myFunc(){
+            let start=confirm("Start?");
+            start?alert("Here we go!"):alert("Aborted");
+        }
+        
+        function myFunc2(){
+            let start=confirm("Start?");
+            let message=start?"Here we go!" :"Aborted";
+            alert(message);
+        }
+    </script>
+</body>
+</html>

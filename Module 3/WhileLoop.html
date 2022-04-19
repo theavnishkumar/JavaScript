@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WhileLoop</title>
+</head>
+<body>
+    <button onclick="myFunc()">Click Here</button>
+
+    <script>
+        function myFunc(){
+            let isOver=false;
+            let counter;
+
+            while(!isOver){
+              isOver=!confirm(`[${counter++}] Continue the loop?`)
+            }
+
+            let n=0;
+            while(n<91){
+                console.log(n);
+                alert(n);
+                n+=10;
+            }
+        }
+    </script>
+</body>
+</html>

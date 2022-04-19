@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>If Statement</title>
+</head>
+<body>
+    <button onclick="myFunc()">Click Me</button>
+    <script>
+        function myFunc(){
+            let userAge=prompt("What is your age?");
+            let isFemale=false;
+            let points=703;
+            let cartValue=299;
+            let shippingCost=9.99;
+
+            if(userAge>21){
+                if(cartValue>=300||points>=500){
+                    shippingCost=0;
+                }
+            }
+            console.log(shippingCost);
+            alert("Shipping fee: "+shippingCost);
+        }
+    </script>
+</body>
+</html>
