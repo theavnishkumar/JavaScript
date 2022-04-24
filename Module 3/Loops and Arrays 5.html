@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops and Arrays</title>
+</head>
+<body>
+    <button onclick="myFunc()">Click Me</button>
+    <script>
+        function myFunc(){
+            let cities=[
+                {name: "New York",population: 18.65e6},
+                {name: "Cairo", population: 18.82e6},
+                {name: "Mumbai", population: 19.32e6},
+                {name: "Sao Paulo", population: 20.88e6},
+                {name: "Mexico City", population: 21.43e6},
+                {name: "Shanghai", population: 23.48e6},
+                {name: "Delhi", population: 25.87e6},
+                {namee: "Tokyo", population: 37.26e6}
+            ];
+
+            for(let city of cities){
+                if(city.population>20e6){
+                    console.log(`${city.name} -> ${city.population}`);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

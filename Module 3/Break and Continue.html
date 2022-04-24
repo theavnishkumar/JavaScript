@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break and Continue</title>
+</head>
+<body>
+    <button onclick="myFunc()">Click Me</button>
+
+    <script>
+        function myFunc(){
+            document.writeln("While Loop :");
+            let i=0;
+            while(true){
+                document.write('<br>'+i);
+                i++;
+                if(i>=5){
+                    break;
+                }
+            }
+document.writeln("<br>For Loop : ");
+            for(let i=0; i<10; i++){
+                if(i==3){
+                    continue;
+                }
+                document.writeln("<br>"+i);
+            }
+        }
+    </script>
+</body>
+</html>

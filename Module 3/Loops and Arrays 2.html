@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loops Array</title>
+    <style>
+        button{
+            padding: 20px 24px;
+            margin: 0;
+            border: none;
+            background-color:#0f2;
+            color: #fff;
+            font-size: 24px;
+            display: block;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0.1px 0.1px 25px 2px rgba(0,0,0,0.5);
+
+
+        }
+    </style>
 </head>
 <body>
     <button onclick="myFunc()">Click Me</button>
@@ -12,7 +28,7 @@
         function myFunc(){
             let values=[10,20,30,40,50,60,70,80,90,100];
 
-            for(let i=0; i<=values.length-1; i++){
+            for(let i=0; i<values.length; i++){
                 console.log(values[i]);
             }
             console.log("-----------------------")
